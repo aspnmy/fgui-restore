@@ -17,6 +17,12 @@ npm install
 ```
 node restore [inputFile] [outputPath]
 ```
+## 快速使用
+```bat
+运行 UnFgui.bat 后，输入要还原的资源文件路径和输出路径即可。
+
+```
+
 
 ## 参考
 

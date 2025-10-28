@@ -993,8 +993,13 @@ async function decodeComponentData(contentItem, files) {
                 await loadQuotePackage(quotePackage);
             }
 
+            // 跳过跨包资源检查，继续处理可以处理的部分
             if (Object.keys(quotePackageMap).length == 0) {
-                throw new Error("跨包资源好像没有同步下载放到同个目录下！");
+                console.warn(`警告：找不到跨包资源，将尝试继续处理可以处理的部分...`);
+                console.warn(`  - 需要的包ID: ${pkgId}`);
+                console.warn(`  - 资源类型: ${type === 0 ? 'image' : type === 1 ? 'movieclip' : type === 2 ? 'sound' : type === 3 ? 'component' : type === 4 ? 'atlas' : 'unknown'}`);
+                console.warn(`  - 请确保引用的外部包资源文件已放置在与当前资源相同的目录下`);
+                // 不抛出错误，继续执行
             }
 
             for (let i in quotePackageMap) {
