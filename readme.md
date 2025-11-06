@@ -2,16 +2,13 @@
 
 <font size=5>本工程仅作学习研究使用，本意用于工程项目不幸破损，通过发布出来的资源文件进行紧急还原，请勿用于资源破解侵权等行为，否则后果自负！！</font>
 
-
 ## 下载
 
 ```
-git clone -b v4.2.5 https://github.com/aspnmy/fgui-restore.git
+git clone git@github.com:krapnikkk/fgui-restore.git
 ```
 
 ## 安装 
-- 先删除 package-lock.json
-
 
 ```sh
 npm install
@@ -20,14 +17,6 @@ npm install
 ```
 node restore [inputFile] [outputPath]
 ```
-## 快速使用
-- 需要解压的资源文件放在input目录下
-- 解压后的资源文件输出在output目录下
-```bat
-运行 UnFgui.bat 后，按照提示进行操作。
-
-```
-
 
 ## 参考
 

@@ -2,6 +2,7 @@ fairygui.as
 node_modules/
 .vscode/
 UIProject/
-input/
 output/
 ui
+input/
+build/
